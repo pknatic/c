@@ -198,9 +198,12 @@
 // 	return 0;
 // }
 
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-	printf("\n\n%c",97.73626746767234);
-	return 0;
-}
+ int a = 825325678;
+ float j = 9.0;
+ printf("\n%3d",a);
+ printf("\n%10f",j);
+ return 0;
+ }
