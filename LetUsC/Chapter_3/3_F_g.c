@@ -16,11 +16,11 @@ int main()
     pc=sqrt(pow(x2-x1,2)+pow(y2-y1,2)); 
     printf("Pc = %.2f\n",pc);
     if (pc==0)
-        printf("point (%d,%d) lines on the boundry of circle.",x2,y2);
+        printf("point (%d,%d) on the boundary of circle.",x2,y2);
     else if(pc>r)
-        printf("point (%d,%d) lines outside the circle.",x2,y2);
+        printf("point (%d,%d) outside of the circle.",x2,y2);
     else if (pc<r)
-        printf("point (%d,%d) lines inside the circle.",x2,y2);
+        printf("point (%d,%d) inside the circle.",x2,y2);
     else
         printf("Wrong Entry");
     return 0;
