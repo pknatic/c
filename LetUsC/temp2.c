@@ -198,12 +198,28 @@
 // 	return 0;
 // }
 
-#include <stdio.h>
+// #include<stdio.h>
+// int main()
+// {
+//     int arr[3][2]={2,4,6,8,10,12};
+//     int *p;
+//     p = arr[0];
+//     // printf("%d\n",p);
+//     // printf("%d\n",*p);
+//     p = arr[0]+2;
+//     printf("%u\n",arr[1]+1);
+//     printf("%d\n",*p);
+//     return 0;
+// }
+#include<stdio.h>
 int main()
 {
- int a = 825325678;
- float j = 9.0;
- printf("\n%3d",a);
- printf("\n%10f",j);
- return 0;
- }
+    int a = 6,d;
+    float b =6.7;
+    float c;
+    c=a+b;
+    printf("%f",c);
+    d =(int)c;
+    printf("\n%d ",d);
+    return 0;
+}

@@ -11,7 +11,7 @@ char ch;
 printf("Enter the character = ");
 scanf("%c",&ch);
 if(ch>=65 && ch<=90)
-printf("The character is upper case lette.\n");
+printf("The character is upper case letter.\n");
 if(ch>=97 && ch<=122)
 printf("The character is small case letter.\n");
 if(ch>=48 && ch<=57)

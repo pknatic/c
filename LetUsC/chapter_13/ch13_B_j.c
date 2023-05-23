@@ -69,3 +69,5 @@ int add_front(int *p)
     printf("Enter the value You want to add  ");
     scanf("%d",p);
 }
+
+//Pending..........................................................................................

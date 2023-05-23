@@ -34,11 +34,11 @@ int main()
     per=tot*100/500;
     printf("Total percentage %f\n",per);
     if(per>=60)
-    printf("First Devision");
+    printf("First Division");
     if(per>=50) 
-    printf("Second Devision");
+    printf("Second Division");
     if(per>=40)
-    printf("Third Devision");
+    printf("Third Division");
     else
     printf("fail");
     return 0;

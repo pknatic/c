@@ -12,7 +12,7 @@ int main()
     scanf("%d",&c);
     if (a==b && b==c)
     {
-        printf("This is a equilanteral triangle.");
+        printf("This is a equilateral triangle.");
     }
     else if((a==b && b!=c) || (b==c && c!=a) || (c==a && a!=b))
     {
