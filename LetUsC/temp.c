@@ -197,3 +197,31 @@
 //     }
 //     return 0;
 // }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int i,j=25;
+//     int *pi,*pj = &j;
+//     *pj = j+5;
+//     printf("%d \n",*pj);
+//     i = *pj + 5;
+//     printf("%d \n",i);
+//     pi = pj;
+//     printf("%d \n",pj);
+//     printf("%d \n",*pj);
+//     *pi = i+j;
+//     printf("%d \n",*pi);
+//     printf("%d \n",*(pi+2));
+//     return 0;
+// }
+
+#include<stdio.h>
+int main()
+{
+    int x[3][5] = {1,2,3,4,5,6,7,8,1,2,3,4,5,6,7},*n;
+    n = x[0];
+    printf("%d\n",*n); 
+    printf("%d\n",*(*(x+2)+1)); 
+    return 0;
+}
