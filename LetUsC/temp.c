@@ -216,12 +216,20 @@
 //     return 0;
 // }
 
-#include<stdio.h>
+// #include<stdio.h>
+// int main()
+// {
+//     int x[3][5] = {1,2,3,4,5,6,7,8,1,2,3,4,5,6,7},*n;
+//     n = x[0];
+//     printf("%d\n",*n); 
+//     printf("%d\n",*(*(x+2)+1)); 
+//     return 0;
+// }
+
+
+#include <stdio.h>
 int main()
-{
-    int x[3][5] = {1,2,3,4,5,6,7,8,1,2,3,4,5,6,7},*n;
-    n = x[0];
-    printf("%d\n",*n); 
-    printf("%d\n",*(*(x+2)+1)); 
+{ 
+    printf("\a");
     return 0;
-}
+ }
