@@ -230,6 +230,7 @@
 #include <stdio.h>
 int main()
 { 
-    printf("\a");
+    const int x = 7;
+    printf("%d\n",x);
     return 0;
  }
