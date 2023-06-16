@@ -219,8 +219,8 @@ int main()
 bool isProgrammingFun = true;
 bool isFishTasty = false;
 
-printf("%d", isProgrammingFun);
-printf("%d", isFishTasty); 
+printf("%d\n", isProgrammingFun);
+printf("%d\n", isFishTasty); 
     
     return 0;
 }
