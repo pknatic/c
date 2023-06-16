@@ -230,7 +230,9 @@
 #include <stdio.h>
 int main()
 { 
-    const int x = 7;
-    printf("%d\n",x);
+    const float x = 3.14;
+    printf("%f\n",x);
+    int y = x+1;
+    printf("%d\n",y);
     return 0;
  }

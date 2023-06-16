@@ -211,15 +211,16 @@
 //     printf("%d\n",*p);
 //     return 0;
 // }
+
 #include<stdio.h>
+#include<stdbool.h>
 int main()
 {
-    int a = 6,d;
-    float b =6.7;
-    float c;
-    c=a+b;
-    printf("%f",c);
-    d =(int)c;
-    printf("\n%d ",d);
+bool isProgrammingFun = true;
+bool isFishTasty = false;
+
+printf("%d", isProgrammingFun);
+printf("%d", isFishTasty); 
+    
     return 0;
 }

@@ -51,7 +51,7 @@ int main()
         }
         case 6:
         {
-            printf(" We are in 6st case ");
+            printf(" Nice to work with you Come Again  ");
             loop = 0;
             break;
         }
