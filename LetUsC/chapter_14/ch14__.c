@@ -1,19 +1,21 @@
-#include<stdio.h>
+/* Write a program to pass a 2d array to function and print. */
+#include <stdio.h>
+void display(int q[][4], int, int);
 int main()
 {
-    int arr[4][2] = {1234,56, 1212,33, 1434,80, 1312,78};
-//  int arr[4][2] = {{1234,56},{1212,33},{1434,80},{1312,78}}; we can write like this
-    int (*p)[2];
-    int *pre,i,j;
-    for(i=0;i<4;i++)
+    int a[3][4] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 6};
+    display(a, 3, 4);
+    return 0;
+}
+void display(int q[ ][4], int row, int col)
+{
+    int i, j;
+    for (i = 0; i < row; i++)
     {
-        p=&arr[i];
-        pre = *p;
-        for(j=0;j<2;j++)
+        for (j = 0; j < col; j++)
         {
-            printf("%d ",*(pre+j));
+            printf("%d ", q[i][j]);
         }
         printf("\n");
     }
-    return 0;
 }

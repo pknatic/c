@@ -221,18 +221,40 @@
 // {
 //     int x[3][5] = {1,2,3,4,5,6,7,8,1,2,3,4,5,6,7},*n;
 //     n = x[0];
-//     printf("%d\n",*n); 
-//     printf("%d\n",*(*(x+2)+1)); 
+//     printf("%d\n",*n);
+//     printf("%d\n",*(*(x+2)+1));
 //     return 0;
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+//     const float x = 3.14;
+//     printf("%f\n",x);
+//     int y = x+1;
+//     printf("%d\n",y);
+//     return 0;
+//  }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int a = 'A';
+//     printf("%d",a);
+//     return 0;
+// }
 
 #include <stdio.h>
 int main()
-{ 
-    const float x = 3.14;
-    printf("%f\n",x);
-    int y = x+1;
-    printf("%d\n",y);
+{
+    int a = 6;
+    if (a > 5)
+    {
+        printf("Every block of code is a function");
+    }
+    else
+    {
+        printf("False");
+    }
     return 0;
- }
+}
