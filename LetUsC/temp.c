@@ -244,17 +244,111 @@
 //     return 0;
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
+// int main()
+// {
+//     int a = 6;
+//     if (a > 5)
+//     {
+//         printf("Every block of code is a function");
+//     }
+//     else
+//     {
+//         printf("False");
+//     }
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     char name[25] = "hello", a[6] = "hii";
+//     char *p = "Aligarh" , *s = "alll";
+//         // p = name;
+//     p = "yyy";
+//     // printf("%s",p);
+//     printf("%s",a);
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     float pi = 3.14,x;
+//     const float y = 12.5;
+//     pi = pi *2;
+//     x = y + 2;
+//     printf("%f",x);
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main()
+// {
+// int n,i;
+// printf("Enter the elements of array");
+// scanf("%d",&n);
+// int arr[n];
+// int temp=n-1;
+// for(i=0;i<n;i++)
+// {
+//     printf("Enter the element no. %d = ",i+1);
+//     scanf("%d",&arr[i]);
+// }
+// for(i=0;i<(n/2);i++)
+// {
+    
+//     if(arr[i]==arr[temp-i])
+//     {
+//         printf(" Array[%d] = %d is equal to array[%d] = %d \n",i,arr[i],temp-i,arr[temp-i]);
+//     }
+    
+// }
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     int n = 21,ui,ci;
+//     while (n>1)
+//     {
+        
+//         printf("Please input a number between 1 to 4 ");
+//         scanf("%d",&ui);
+//         if(ui>0 && ui<5)
+//         {
+//         n=n-ui;
+//         printf("Matchsticks Left = %d \n",n);
+//         printf("Now computer pick the number\n");
+//         ci = 5-ui;
+//         printf("Computer picked %d\n",ci);
+//         n=n-ci;
+//         printf("Matchsticks Left = %d \n",n);
+//         }
+//         else
+//         {
+//             printf("Please pick a valid number\n");
+//         }
+//     }
+//     printf("Because 1 matchstick left you lose the game!!!");    
+//     return 0;
+// }
+
+
+#include<stdio.h>
 int main()
 {
-    int a = 6;
-    if (a > 5)
+    int i;
+    for(i=1;i<5;)
     {
-        printf("Every block of code is a function");
-    }
-    else
-    {
-        printf("False");
+        printf("%d",i++);
     }
     return 0;
 }
