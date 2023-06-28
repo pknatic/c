@@ -341,14 +341,23 @@
 //     return 0;
 // }
 
-
 #include<stdio.h>
 int main()
 {
-    int i;
-    for(i=1;i<5;)
+    int num=1,i,counter=0;
+    for(num=1;num<=300;num++)
     {
-        printf("%d",i++);
+        for(i=1,counter=0;i<=num;i++)
+        {
+            if(num%i==0)
+            {
+                counter++;
+            }
+        }
+        if(counter==2)
+        {
+            printf("%d ",num);
+        }
     }
     return 0;
 }

@@ -212,15 +212,22 @@
 //     return 0;
 // }
 
+// #include<stdio.h>
+// #include<stdbool.h>
+// int main()
+// {
+// bool isProgrammingFun = true;
+// bool isFishTasty = false;
+
+// printf("%d\n", isProgrammingFun);
+// printf("%d\n", isFishTasty); 
+    
+//     return 0;
+// }
 #include<stdio.h>
-#include<stdbool.h>
 int main()
 {
-bool isProgrammingFun = true;
-bool isFishTasty = false;
-
-printf("%d\n", isProgrammingFun);
-printf("%d\n", isFishTasty); 
-    
+    int a = 4294967297;
+    printf("%u",a);
     return 0;
 }

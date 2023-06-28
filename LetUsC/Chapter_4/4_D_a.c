@@ -14,17 +14,21 @@ int main()
     {
         printf("This is a equilateral triangle.");
     }
-    else if((a==b && b!=c) || (b==c && c!=a) || (c==a && a!=b))
+    if((a==b && b!=c) || (b==c && c!=a) || (c==a && a!=b))
     {
         printf("This is a isosceles triangle.");
     }
-    else if((a*a)+(b*b)==(c*c) || (b*b)+(c*c)==(a*a) || (a*a)+(c*c)==(b*b))
+    if(a!=b && b!=c)
+    {
+        printf("This is a scalene triangle.\n");
+    }
+    if((a*a)+(b*b)==(c*c) || (b*b)+(c*c)==(a*a) || (a*a)+(c*c)==(b*b))
     {
         printf("This is a right angle Triangle.\n");
     }
     else
     {
-        printf("This is a scalene triangle.\n");
+        printf("This is not a right angle Triangle\n");
     }
     return 0;
 }
