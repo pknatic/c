@@ -20,7 +20,7 @@ while(ans=='y'|| ans=='Y')
     scanf("%c",&ans);
 }
     
-    printf("\nTotal positve numbers = %d",posi);
+    printf("\nTotal positive numbers = %d",posi);
     printf("\nTotal negative numbers = %d",neg);
     printf("\nTotal zero numbers = %d",zero);
      return 0;
