@@ -17,7 +17,7 @@ int main()
         if(i==12)
         printf("12 Noon\n");
         if(i>12)
-        printf("%d PM\n",i%12);
+        printf("%d PM\n",i-12);
     }
 
     return 0;

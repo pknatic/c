@@ -224,10 +224,134 @@
     
 //     return 0;
 // }
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     int year=0, invest, alternate;
+
+//     while(alternate>invest)
+//     {
+//         year++;  //year = year + 1;
+
+//         // yearly produce income form alternate solution
+//         // 9 % of 1000 = 90
+//         alternate = year * 90;
+
+//         // yearly produced income from machine
+//         // 1000 per year - [6000(machine cost) - 2000(salvage or scrap value of machine)]
+//         // 1000 * year - [6000-2000]
+//          invest = (1000*year) - 4000;
+
+//     }
+
+//     printf("The Life of Machine: %d years", year);
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// #include<conio.h>
+// #include<math.h>
+// int main()
+// {
+//     float p,n,r,q,a;
+//     int i;
+//     //for 10 sets we have to create a for loop
+//     for(i=1;i<=10;i++)
+//     {
+//         printf("Set: %d\n",i);
+//         //accept the values from user
+//         printf("Enter Principle: ");
+//         scanf("%f",&p);
+//         printf("Enter Rate: ");
+//         scanf("%f",&r);
+//         printf("Enter Time(in year): ");
+//         scanf("%f",&n);
+//         printf("Enter Compound Interest: ");
+//         scanf("%f",&q);
+
+//         //formula
+//         a = p*(pow((1+r/q),n*q));
+//         printf("Amount: %.2f\n\n",a);
+//     }
+// }
+
+// #include<stdio.h>
+// #include<math.h>
+// int main()
+// {
+//     int i,j,k;
+//     for(int i=1;i<=30;i++)
+//     {
+//         for(int k =1;k<=30;k++)
+//         {
+//             for(int l =1;l<=30;l++)
+//             {
+//                 if(i*i+k*k==l*l)
+//                 {
+//                     printf("(%d, %d, %d)\n",i,l,k);
+//                 }
+//             }
+//         }
+//     }
+//     return 0;
+// }
+
+/*Population of a town today is 100000. The population has increased
+steadily at the rate of 10 % per year for last 10 years. Write a
+program to determine the population at the end of each year in the
+last decade.*/
+// #include<stdio.h>
+// int main()
+// {
+//     float pop=100000,i;
+//     // float dif=9.090909;
+//     // for(i=1;i<=10;i++)
+//     // {
+//     //     pop = pop - (dif*pop)/100 ;
+//     //     printf("Population on %d year is %d\n",11-i,pop);
+//     // }
+//     for(i=1;i<=10;i++)
+//     {
+//         pop = pop - (pop*10)/110;
+//         printf("Population on %.0f year is %.0f\n",11-i,pop);
+//     }
+//     return 0;
+// }
+
 #include<stdio.h>
 int main()
 {
-    int a = 4294967297;
-    printf("%u",a);
+    int ram,n=30000,count,i,l,k;
+    for(i=1;i<=n;i++)
+    {
+        count=0;
+        for(k=1;k*k*k<=i;k++)
+        {
+            for(l=k;k*k*k+l*l*l<=i;l++)
+            {
+                if(k*k*k+l*l*l==i)
+                count++;
+            }
+        }
+        if(count==2)
+        {
+            // printf("%d\n",i);
+            for(int a=1;a<=i;a++)
+            {
+                for(int b=1;b<=i;b++)
+                {
+                    if(a*a*a+b*b*b==i)
+                    {
+                        printf("(%d , %d) = %d\n",a,b,i);
+                    }
+                }
+            }
+            printf("\n");
+        }
+    }
     return 0;
 }
+
