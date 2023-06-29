@@ -11,24 +11,18 @@ int main()
     for(i=1;i<=lmt;i++)
     {   
         count=0;
-        for(x=1;x*x*x<=i;x++)
-        {
-            for(y=x;x*x*x+y*y*y<=i;y++)
-            {
-                if(x*x*x+y*y*y==i)
-                {
+        for(x=1;x*x*x<=i;x++){
+            for(y=x;x*x*x+y*y*y<=i;y++){
+                if(x*x*x+y*y*y==i){
                     count++;
                 }
             }            
         }        
         if(count==2)
         {
-            for(int a = 1;a<=i;a++)
-            {
-                for(int b = 1;b<=i;b++)
-                {
-                    if(a*a*a+b*b*b==i)
-                    {
+            for(int a = 1;a<=i;a++){
+                for(int b = 1;b<=i;b++){
+                    if(a*a*a+b*b*b==i){
                         printf("(%d,%d) = %d  \n",a,b,i); 
                     }
                 }
