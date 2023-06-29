@@ -260,18 +260,6 @@
 // }
 
 
-// #include<stdio.h>
-// int main()
-// {
-//     char name[25] = "hello", a[6] = "hii";
-//     char *p = "Aligarh" , *s = "alll";
-//         // p = name;
-//     p = "yyy";
-//     // printf("%s",p);
-//     printf("%s",a);
-//     return 0;
-// }
-
 
 // #include<stdio.h>
 // int main()
@@ -341,23 +329,24 @@
 //     return 0;
 // }
 
-#include<stdio.h>
-int main()
-{
-    int num=1,i,counter=0;
-    for(num=1;num<=300;num++)
-    {
-        for(i=1,counter=0;i<=num;i++)
-        {
-            if(num%i==0)
-            {
-                counter++;
-            }
-        }
-        if(counter==2)
-        {
-            printf("%d ",num);
-        }
-    }
-    return 0;
-}
+// #include<stdio.h>
+// int main()
+// {
+//     int num=1,i,counter=0;
+//     for(num=1;num<=300;num++)
+//     {
+//         for(i=1,counter=0;i<=num;i++)
+//         {
+//             if(num%i==0)
+//             {
+//                 counter++;
+//             }
+//         }
+//         if(counter==2)
+//         {
+//             printf("%d ",num);
+//         }
+//     }
+//     return 0;
+// }
+
