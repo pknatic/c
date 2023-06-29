@@ -14,16 +14,16 @@ int main()
     printf("Percentages of student = %d\n",per);
     if (per>60)
     {
-        printf("First Devision\n");
+        printf("First Division\n");
     }
     else
     {
         if(per>=50)
-        printf("Second Devision");
+        printf("Second Division");
         else 
         {
             if(per>=40)
-            printf("Third Devision");
+            printf("Third Division");
             else
             {
                 if(per<40);
