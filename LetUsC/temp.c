@@ -350,3 +350,45 @@
 //     return 0;
 // }
 
+#include<stdio.h>
+int main()
+{
+    int i=1,j,k,count;
+    while(i<=30000)
+    {
+        count=0;
+        j=1;
+        while(j*j*j<=i)
+        {
+            k=j;
+            while(j*j*j+k*k*k<=i)
+            {
+                if(j*j*j+k*k*k==i){
+                count++;
+                }
+                k++;
+            }
+            j++;
+        }
+
+        if(count==2)
+        {
+            int a = 1,b;
+            printf("%d ",i);
+            while(a<=i)
+            {
+                b=a;
+                while(b<=i)
+                {
+                    if(a*a*a+b*b*b==i)
+                    printf("(%d %d)",a,b);
+                    b++;
+                }
+                a++;
+            }
+            printf("\n");
+        }
+        i++;
+    }
+    return 0;
+}

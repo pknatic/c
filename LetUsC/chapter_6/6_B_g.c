@@ -21,7 +21,7 @@ int main()
         if(count==2)
         {
             for(int a = 1;a<=i;a++){
-                for(int b = 1;b<=i;b++){
+                for(int b = a;b<=i;b++){
                     if(a*a*a+b*b*b==i){
                         printf("(%d,%d) = %d  \n",a,b,i); 
                     }

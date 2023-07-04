@@ -13,7 +13,6 @@
 // 	return 0;
 // }
 
-
 // #include<stdio.h>
 // int fun(int x)
 // {
@@ -41,10 +40,9 @@
 // 	printf("%d\n",a);
 // 	printf("%d\n",b);
 // 	printf("%d\n",c);
-// 	printf("%d\n",d);	
+// 	printf("%d\n",d);
 // 	return 0;
 // }
-
 
 // #include<stdio.h>
 // #define MAX 10
@@ -155,8 +153,6 @@
 // 	return item;
 // }
 
-
-
 // #include<stdio.h>
 // void fun(int arr[],int n)
 // {
@@ -220,11 +216,10 @@
 // bool isFishTasty = false;
 
 // printf("%d\n", isProgrammingFun);
-// printf("%d\n", isFishTasty); 
-    
+// printf("%d\n", isFishTasty);
+
 //     return 0;
 // }
-
 
 // #include<stdio.h>
 // int main()
@@ -249,7 +244,6 @@
 //     printf("The Life of Machine: %d years", year);
 //     return 0;
 // }
-
 
 // #include<stdio.h>
 // #include<conio.h>
@@ -321,37 +315,18 @@ last decade.*/
 //     return 0;
 // }
 
-#include<stdio.h>
-int main()
-{
-    int ram,n=30000,count,i,l,k;
-    for(i=1;i<=n;i++)
-    {
-        count=0;
-        for(k=1;k*k*k<=i;k++)
-        {
-            for(l=k;k*k*k+l*l*l<=i;l++)
-            {
-                if(k*k*k+l*l*l==i)
-                count++;
-            }
-        }
-        if(count==2)
-        {
-            // printf("%d\n",i);
-            for(int a=1;a<=i;a++)
-            {
-                for(int b=1;b<=i;b++)
-                {
-                    if(a*a*a+b*b*b==i)
-                    {
-                        printf("(%d , %d) = %d\n",a,b,i);
-                    }
-                }
-            }
-            printf("\n");
-        }
-    }
-    return 0;
-}
+// #include <stdio.h>
+// int main()
+// {
+//     int a=2, b, c,i=100;
+//     for(i=1;i<=500;i++)
+//     {
 
+//         if((a*a*a) == i)
+//         {
+//         printf("%d\n",i);
+//         }
+//         a++;
+//     }
+//     return 0;
+// }

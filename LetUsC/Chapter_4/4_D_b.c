@@ -6,7 +6,6 @@ yellow=((white-blue/255)/white)
 black=1-white
 Note that if the RGB values are all 0, then the CMY values are all 0 and the K value is 1. */
 #include<stdio.h>
-#include<math.h>
 int main()
 {
     float r,g,b,c,m,y,k,w,max;
