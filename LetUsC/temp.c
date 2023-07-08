@@ -350,45 +350,91 @@
 //     return 0;
 // }
 
+// #include<stdio.h>
+// int main()
+// {
+//     int i=1,j,k,count;
+//     while(i<=30000)
+//     {
+//         count=0;
+//         j=1;
+//         while(j*j*j<=i)
+//         {
+//             k=j;
+//             while(j*j*j+k*k*k<=i)
+//             {
+//                 if(j*j*j+k*k*k==i){
+//                 count++;
+//                 }
+//                 k++;
+//             }
+//             j++;
+//         }
+
+//         if(count==2)
+//         {
+//             int a = 1,b;
+//             printf("%d ",i);
+//             while(a<=i)
+//             {
+//                 b=a;
+//                 while(b<=i)
+//                 {
+//                     if(a*a*a+b*b*b==i)
+//                     printf("(%d %d)",a,b);
+//                     b++;
+//                 }
+//                 a++;
+//             }
+//             printf("\n");
+//         }
+//         i++;
+//     }
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     int matrix[4][5] = {
+//         {15, 30, 28, 19, 61},
+//         {1, 2, 3, 4, 5},
+//         {10, 20, 30, 40, 50},
+//         {100, 200, 300, 400, 500}
+//     };
+//     printf("%d",sizeof(matrix)/sizeof(matrix[0][0]));
+//     return 0;
+// }
+
+
+
 #include<stdio.h>
 int main()
 {
-    int i=1,j,k,count;
-    while(i<=30000)
+    int i,j,n=1,row;
+    printf("Enter the rows = ");
+    scanf("%d",&row);
+    for(i=1;i<=row;i++)
     {
-        count=0;
-        j=1;
-        while(j*j*j<=i)
+        for(j=row-i;j>=1;j--)
         {
-            k=j;
-            while(j*j*j+k*k*k<=i)
-            {
-                if(j*j*j+k*k*k==i){
-                count++;
-                }
-                k++;
-            }
-            j++;
+            printf(" ");
         }
-
-        if(count==2)
+        for(j=1;j<=i;j++)
         {
-            int a = 1,b;
-            printf("%d ",i);
-            while(a<=i)
+            if(i==1 || j==1 || j == )
             {
-                b=a;
-                while(b<=i)
-                {
-                    if(a*a*a+b*b*b==i)
-                    printf("(%d %d)",a,b);
-                    b++;
-                }
-                a++;
+                n=1;
+                printf("%d",n);
             }
-            printf("\n");
+            else
+            {
+                n = n * (i-j+1)/j;
+                printf(" %d",n);
+            }
         }
-        i++;
+        printf("\n");
     }
     return 0;
 }
